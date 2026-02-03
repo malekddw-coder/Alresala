@@ -1,0 +1,140 @@
+:root {
+    --teal: #1abc9c;
+    --pink: #d81b60;
+    --dark: #2c3e50;
+    --light-gray: #f4f7f6;
+    --call: #0f9d58;
+    --map: #4285f4;
+}
+
+body { 
+    font-family: 'Tajawal', sans-serif; 
+    margin: 0; 
+    background: var(--light-gray); 
+    direction: rtl; 
+}
+
+.nav-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 5%; 
+    background: #fff; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand img {
+    width: 45px;
+    height: auto;
+}
+
+.logo { font-size: 24px; font-weight: bold; color: var(--teal); }
+.logo span { color: var(--pink); }
+
+.hero { 
+    background: var(--dark); 
+    color: white; 
+    padding: 60px 20px; 
+    text-align: center; 
+}
+
+.order-section { padding: 50px 5%; }
+
+.form-container { 
+    background: white; 
+    padding: 30px; 
+    border-radius: 15px; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+}
+
+.input-group { margin-bottom: 20px; }
+.input-group label { display: block; margin-bottom: 8px; font-weight: bold; color: var(--dark); }
+
+.input-group select, 
+.input-group input, 
+.input-group textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    font-family: inherit;
+    box-sizing: border-box; /* لضمان عدم خروج المدخلات عن الحاوية */
+}
+
+.whatsapp-btn {
+    width: 100%; 
+    padding: 15px; 
+    background: #25d366; 
+    color: white; 
+    border: none; 
+    border-radius: 8px;
+    font-size: 18px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover { 
+    background: #1ebe57; 
+    transform: translateY(-2px); 
+}
+
+.btn-nav { 
+    background: var(--teal); 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--dark);
+}
+
+/* الأزرار العائمة */
+.floating-actions {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 999;
+}
+
+.fab {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.fab svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+.fab.call { background: var(--call); }
+.fab.map { background: var(--map); }
+
+.fab:hover {
+    transform: scale(1.08);
+}
